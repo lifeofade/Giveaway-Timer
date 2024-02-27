@@ -1,0 +1,22 @@
+body{
+    background-image: url('IMG_1062.gif');
+    background-size: cover;
+    background-position: center;
+    font-family: 'Ariel', sans-serif;
+    text-align: center;
+
+
+
+}
+head {
+    text-align: right;
+    margin-left: 500px;
+}
+
+footer {
+    background-color: dimgray;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+    
