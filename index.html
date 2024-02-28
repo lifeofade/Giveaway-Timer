@@ -1,26 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-    <link rel="stylesheet" href="timer.css">
-    <script src="script.js"></script>
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>blade. inc</title>
     <link rel="shortcut icon" href="imgurl.jpg" type="image/x-icon">
-</head>
-<body>
 
-   <div class="timer"></div>
-<div class="head">
-    <img src="IMG_1121.png" width="700" height="400">
-    <h6>BLADE ENTREPRISES</h6>
+    <style>
+        body {
+            font-family: 'Ariel', sans-serif;
+            background-image: url('IMG_1062.gif');
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            color: #fff;
+            justify-content: center;
+            align-items: center;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px;
+        }
+
+        h1 {
+            color: #090909;
+            font-family: 'Times New Roman', Times, serif;
+            font-style: italic;
+            font-size: 500%;
+        }
+
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        div {
+            text-align: left;
+            margin-left: 10px;
+            margin-bottom: 30px;
+        }
+    </style>
+
+<body>
+    <header>
+        <img src="IMG_1121.png" width="700" height="400">
+        <h1>BLADE. INC</h1>
+    </header>
+<div>
+    <br>Lorem ipsum dolor sit amet consectetur,adipisicing</br> elit. Ipsa atque, illum similique reiciendis ea veritatkajsi<br>s cupiditate id. Possimus, architecto esse repellat s<br>quas quinssquam officia asperiores dolorum quae hi?
 </div>
-<div class="footer">
+    <footer>
+        <p>&copy; Mercedes-Benz x Blade Entreprises</p>
+    </footer>
+
+    <title>Mercedes-Benz AMG GT Giveaway</title>
+    <style>
+        body {
+            background-color: black;
+            color: rgb(10, 10, 10);
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .countdown {
+
+margin-top: 100px;
+}
+
+h1{
+font-size: 36px;
+}
+
+#countdown {
+font-size: 48px;
+background-color: rgb(4, 4, 4);
+text-align: center;
+margin-top: 100px;
+margin-bottom: 400px;
+margin-left: 350px;
+margin-right: 550px;
+border-radius: 450px;
+
+
+color: rgb(255, 255, 255);
+}
+    </style>
+
+<body>
+    <style>
+        
+h4 {
+            color: #0a0a0a;
+            font-family: 'Times New Roman', Times, serif;
+            font-style: italic;
+            font-size: 200%;
+        }
+    </style>
+        <img src="IMG_1057.gif" width="1000" height="600">
+        
+    <p>In Collaboration with Mercedes-Benz <br> we are happy to announce that for our 10th anniversary, <br> we will be giving away this Mercedes-Benz AMG GT R 2017</p>
+    <h4>This giveaway ends on March 5th</h4>
+    
+    <div id="countdown"></div>
+    <script>
+        const countdownDate = new Date('March 5, 2024 00:00:00 GMT+0000').getTime();
+        // Update the countdown every second
+        //Calculate the time remaining in the countdown
+        const countdown = setInterval(function() {
+            //Find the current time
+            const now = new Date().getTime();
+            //Find the time difference between current time and countdown date
+            const distance = countdownDate - now;
+            //Calculate time difference in days to the nearest whole number
+            const days = Math.floor(distance /(1000 * 60 * 60 * 24));
+            //Calculate time difference in hours ,, ,, ,, ,, ,,
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            //Calculate time difference in mins ,, ,, ,, ,, ,,
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            //Calculate time difference in secs ,, ,, ,, ,, ,,
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            //Find the countdown element id and give 
+            document.getElementById('countdown').innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+            //If difference reaches 0 or negative then the giveaway has ended
+if (distance < 0) {
+    clearInterval(countdown);
+    document.getElementById('countdown').innerHTML = 'THE GIVEAWAY HAS ENDED';
+}
+}, ); 
+    </script>
+
 <footer>
-    <p&copy; Mercedez-Benz x Blade Entreprises></p>
+    <p>&copy; Blade Entreprises. All rights reserved.</p>
 </footer>
-</div>
-    <script src="script.js"></script>
+
 </body>
 </html>
